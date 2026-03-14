@@ -1,0 +1,8 @@
+# Runtime (optional, for full functionality)
+pynput>=1.7
+
+# macOS menu bar app (optional)
+rumps>=0.4.0; platform_system == "Darwin"
+
+# Build .app from source on macOS (optional)
+pyinstaller>=6; platform_system == "Darwin"
