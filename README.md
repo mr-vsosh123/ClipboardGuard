@@ -1,10 +1,10 @@
-# ClipboardGuard (MVP)
+# ClipboardGuard
 
 Локальный инструмент защиты буфера обмена.
 
 ## Что в репозитории
 - `clipboard_guard/` — исходный код анализатора и worker.
-- `daemon_test/macos/` — menu bar приложение для macOS + скрипт сборки `.app`.
+- `daemon_test/` — menu bar приложение для macOS + скрипт сборки `.app`.
 - `requirements.txt` — зависимости для запуска/сборки.
 
 ## Режимы
@@ -27,16 +27,16 @@ python -m clipboard_guard.main --mode sanitizer
 python -m clipboard_guard.main --mode balance
 ```
 
-## Сборка macOS `.app` (без `.dmg`)
+## Сборка macOS `.app`
 ```bash
-cd daemon_test/macos
+cd daemon_test/
 ./build_macos_app.sh
 ```
 
 Результат сборки:
-- `daemon_test/macos/dist/ClipboardGuard.app`
+- `daemon_test/dist/ClipboardGuard.app`
 
 Запуск:
 ```bash
-open daemon_test/macos/dist/ClipboardGuard.app
+open daemon_test/dist/ClipboardGuard.app
 ```
